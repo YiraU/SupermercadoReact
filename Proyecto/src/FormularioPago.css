@@ -1,0 +1,230 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #DCDCDC;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto; /* Margen automático a izquierda y derecha para centrar */
+  padding: 20px;
+  box-sizing: border-box; /* Box-sizing para incluir padding en el ancho máximo */
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #FFD700; /* Color de fondo amarillo */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos para la barra de navegación */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list li {
+  margin-right: 10px;
+}
+
+.barra-navegacion, .carrito-compras {
+  background-color: #0000FF; /* Color de fondo azul */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 4px;
+}
+
+.barra-navegacion:hover, .carrito-compras:hover {
+  background-color: #00008B; /* Color ligeramente más oscuro en hover */
+  transform: scale(1.05);
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #2807ff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Estilos generales para secciones */
+.cart-section,
+.panel,
+.resumen-compra-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-heading,
+.panel-footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group-addon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilos específicos por método de pago */
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilos para el resumen de compra */
+.card-details {
+  margin-bottom: 20px;
+}
+
+.card-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card-details input,
+.card-details textarea,
+.card-details select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.summary {
+  margin-bottom: 20px;
+}
+
+.summary h3 {
+  margin-bottom: 10px;
+}
+
+.summary label {
+  display: inline-block;
+  width: 150px;
+}
+
+.summary span {
+  font-weight: bold;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+.submit-button input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f0ad4e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button input[type="submit"]:hover {
+  background-color: #ec971f;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .encabezado {
+    margin-bottom: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin: 5px 0;
+  }
+
+  .barra-navegacion,
+  .carrito-compras {
+    width: auto;
+  }
+
+  .panel,
+  .resumen-compra-container {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+.btn-ppg{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f0ad4e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,172 @@
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #DCDCDC;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img.Encabezado {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li button.barra_navegacion {
+  background-color: #005bb5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li button.barra_navegacion:hover {
+  background-color: #004494;
+}
+
+form.barra_busqueda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form.barra_busqueda input {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+form.barra_busqueda button {
+  padding: 5px 10px;
+  background-color: #005bb5;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #DCDCDC;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+main h2 {
+  color: red;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Agregamos transición para el efecto de escala */
+}
+
+.contenedor img:hover {
+  transform: scale(1.1); /* Escalamos la imagen al pasar el mouse */
+}
+
+.footer {
+  background-color: #0073e6;
+  color: rgb(206, 74, 74);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #FFE5B4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 30%;
+  flex: 1 1 calc(30% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto img {
+  max-width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.producto h3 {
+  color: red;
+  font-size: 1.2em;
+}
+
+.producto p {
+  font-size: 1em;
+  color: #555;
+  flex: 1;
+}
+
+.producto span {
+  color: #e60000;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  .producto {
+    max-width: 100%;
+  }
+}

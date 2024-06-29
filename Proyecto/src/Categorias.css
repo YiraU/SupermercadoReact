@@ -1,0 +1,166 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #DCDCDC;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+  padding: 0 20px; /* Relleno a los lados */
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #FFD700; /* Color de fondo cambiado a amarillo */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.Logo1, .Encabezado, .Logo2 {
+  height: 50px;
+}
+
+.Encabezado {
+  height: 60px;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Alinear los elementos a la derecha */
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+/* Estilos para los botones de navegación */
+.barra_navegacion {
+  background-color: #0000FF; /* Color de fondo cambiado a azul */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  border-radius: 4px;
+}
+
+.barra_navegacion:hover {
+  background-color: #00008B; /* Color ligeramente más oscuro en hover */
+  transform: scale(1.05); /* Escalado al 105% */
+}
+
+/* Estilos para el contenido principal */
+.categorias {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.categorias h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.boton-categorias {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boton-categorias li {
+  margin: 10px;
+}
+
+.boton-categorias button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.gif{
+  width: 300px; /* Ajusta el tamaño como desees */
+  height: auto;
+  max-width: 100%;
+  animation: bounce 2s infinite; /* Aplica una animación */
+  color: red;
+}
+
+.boton-categorias button:hover {
+  background-color: #0056b3; /* Color ligeramente más oscuro en hover */
+  transform: scale(1.05); /* Escalado al 105% */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.h2{
+color: rgb(229, 229, 233);
+text-align: center;
+padding: 10px 0;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Cambia la dirección de los elementos en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .Encabezado {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Cambia la dirección de la lista en pantallas pequeñas */
+    align-items: center; /* Centra los elementos */
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .barra_navegacion {
+    width: auto; /* Ancho automático en pantallas pequeñas */
+  }
+
+  .categorias {
+    padding: 15px;
+  }
+
+  .boton-categorias li {
+    margin: 5px;
+  }
+}

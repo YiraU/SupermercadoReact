@@ -1,0 +1,160 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 0 20px; /* Relleno a los lados */
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .Logo1, .Encabezado, .Logo2 {
+    height: 50px;
+  }
+  
+  .Encabezado {
+    height: 60px;
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinear los elementos a la derecha */
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para los botones de navegación */
+  .barra_navegacion {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    border-radius: 4px;
+  }
+  
+  .barra_navegacion:hover {
+    background-color: #45a049; /* Color ligeramente más oscuro en hover */
+    transform: scale(1.05); /* Escalado al 105% */
+  }
+  
+  /* Estilos para el formulario de registro */
+  .formulario_registro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 20px; /* Centrar y añadir espacio inferior */
+  }
+  
+  .formulario_registro h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red;
+  }
+  
+  .formulario_registro label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .formulario_registro input[type="text"],
+  .formulario_registro input[type="email"],
+  .formulario_registro input[type="tel"],
+  .formulario_registro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formulario_registro input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .formulario_registro input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  }
+  
+  .formulario_registro input[type="submit"]:hover {
+    background-color: #0056b3; /* Color ligeramente más oscuro en hover */
+    transform: scale(1.05); /* Escalado al 105% */
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Media queries para responsividad */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column; /* Cambia la dirección de los elementos en pantallas pequeñas */
+      align-items: center;
+    }
+  
+    .Encabezado {
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column; /* Cambia la dirección de la lista en pantallas pequeñas */
+      align-items: center; /* Centra los elementos */
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    .barra_navegacion {
+      width: auto; /* Ancho automático en pantallas pequeñas */
+    }
+  
+    .formulario_registro {
+      max-width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+  }
+  
